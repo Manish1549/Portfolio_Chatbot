@@ -46,70 +46,91 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Resume data for the chatbot to access
     const resumeData = {
-        name: "Your Name",
-        title: "Data Engineer & DevOps Specialist",
+        name: "Manish Saharan",
+        title: "Electrical Engineering Undergraduate at IIT Roorkee",
         skills: [
-            "Data Engineering: ETL/ELT pipelines, SQL & NoSQL databases, data modeling, Apache Spark",
-            "DevOps: CI/CD, Docker, Kubernetes, Infrastructure as Code (Terraform, CloudFormation), monitoring",
-            "Programming: Python, Java, JavaScript, Bash scripting",
-            "Cloud: AWS (S3, EC2, Lambda, RDS), Azure, GCP, serverless architecture"
+            "Programming: Python, C/C++, JavaScript",
+            "Web Development: React, FastAPI, Node.js, MongoDB, Firebase",
+            "AI/ML: TensorFlow, scikit-learn, NumPy, OpenCV, Matplotlib",
+            "Version Control & Deployment: Git, GitHub, Netlify, Render",
+            "Others: VS Code Extension Dev, REST APIs, Responsive UI, Bash"
         ],
         experience: [
             {
-                company: "Company A",
-                position: "Senior Data Engineer",
-                duration: "2023 - Present",
+                company: "WorldQuant BRAIN",
+                position: "Research Consultant Intern",
+                duration: "Jan 2025 – Present",
                 responsibilities: [
-                    "Design and implement data pipelines processing 5TB+ daily",
-                    "Lead a team of 3 engineers to modernize legacy data systems",
-                    "Reduce processing costs by 40% through optimization"
+                    "Developed predictive alphas by analyzing global equity market data.",
+                    "Applied statistical research and financial modeling techniques to optimize alpha performance."
                 ]
             },
             {
-                company: "Company B",
-                position: "DevOps Engineer",
-                duration: "2020 - 2023",
+                company: "Biogenith Pharmaceuticals Pvt. Ltd.",
+                position: "Web Developer Intern",
+                duration: "May 2024 – Jun 2024",
                 responsibilities: [
-                    "Implement CI/CD pipelines reducing deployment time by 70%",
-                    "Containerize applications using Docker and orchestrate with Kubernetes",
-                    "Manage cloud infrastructure on AWS using Terraform"
+                    "Created the company’s internal task manager using React and Firebase.",
+                    "Streamlined team collaboration and boosted workflow efficiency through custom-built tools."
                 ]
             }
         ],
         education: [
             {
-                degree: "Master's in Computer Science",
-                institution: "University Name",
-                year: "2020"
+                degree: "B.Tech in Electrical Engineering",
+                institution: "Indian Institute of Technology (IIT), Roorkee",
+                year: "Aug 2022 – May 2026",
+                details: [
+                    "CGPA: 8.01 / 10",
+                    "Relevant Courses: Data Structures, Algorithms, Machine Learning, Neural Networks"
+                ]
             },
             {
-                degree: "Bachelor's in Information Technology",
-                institution: "University Name",
-                year: "2018"
+                degree: "Senior Secondary (Class XII)",
+                institution: "Saraswati Vidya Mandir, Sikar, Rajasthan",
+                year: "2022",
+                details: [
+                    "Score: 95.40% (RBSE Board)"
+                ]
+            },
+            {
+                degree: "Secondary (Class X)",
+                institution: "Saraswati Vidya Mandir, Sikar, Rajasthan",
+                year: "2020",
+                details: [
+                    "Score: 94.83% (RBSE Board)"
+                ]
             }
         ],
+        achievements: [
+            "AIR 4229 in JEE Advanced 2022 (among ~160,000 candidates)",
+            "AIR 3800 in JEE Mains 2022 (among ~8,00,000 candidates)",
+            "Secured 90.00% in Class XII(CBSE) and 94.00% in Class X (CBSE)",
+            "Selected as Research Intern at WorldQuant BRAIN with strong alpha submissions",
+            "Led a team project shortlisted for tech showcase at IIT Roorkee"
+        ],
         certifications: [
-            "AWS Certified Solutions Architect",
-            "Google Cloud Professional Data Engineer",
-            "Microsoft Certified: Azure Data Engineer Associate",
-            "Certified Kubernetes Administrator (CKA)"
+            "Crash Course on Python – Google (Coursera)",
+            "Neural Networks and Deep Learning – DeepLearning.AI (Coursera)",
+            "The Bits and Bytes of Computer Networking – Google (Coursera)",
+            "Front-End Development Libraries – freeCodeCamp"
         ],
         projects: [
             {
-                name: "Data Lake Implementation",
-                description: "Designed and implemented a data lake solution on AWS S3 with proper access control and data cataloging"
+                name: "Grocery Recommendation System",
+                description: "Built a recommendation engine using item-based collaborative filtering. Enabled personalized grocery suggestions to enhance user experience and retention."
             },
             {
-                name: "CI/CD Pipeline Modernization",
-                description: "Led migration from Jenkins to GitHub Actions, reducing build times by 50%"
+                name: "LeetCode VS Code Extension",
+                description: "Developed a VS Code extension integrating LeetCode problem solving and code submission directly within the editor to codeforces. Improved practice workflow and user engagement."
             },
             {
-                name: "Real-time Analytics Platform",
-                description: "Built streaming data pipeline using Kafka and Spark Streaming for real-time insights"
+                name: "AI for Age-Related Condition Detection",
+                description: "Designed a deep learning pipeline using CNNs to detect macular degeneration from retinal images. Achieved high accuracy through optimized preprocessing and training."
             }
         ]
     };
-
+    
     // Function to add messages to the chat interface
     function addMessage(text, isUser = false) {
         const messageDiv = document.createElement('div');
